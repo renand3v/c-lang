@@ -187,6 +187,10 @@ int main() {
 
         No * num = remover(&lista, valor);
 
+        if (num) {
+          free(num);
+        }
+
         printf("Num: %d\n", num->valor);
 
         break;
